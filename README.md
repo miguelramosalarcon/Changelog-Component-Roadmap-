@@ -41,7 +41,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
 
-- [Pagina web](https://miguelramosalarcon.github.io/Personal-Portfolio-Roadmap/)
+- [Pagina web](https://miguelramosalarcon.github.io/Changelog-Component-Roadmap-/)
 - [Codigo fuente]()
 - [Link](https://roadmap.sh/projects/portfolio-website)
 > [!IMPORTANT]
