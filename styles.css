@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SUSE', sans-serif;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secundary-color: #F61067;
+    --text-color: #141515;
+    --text-color-gris: #868E96;
+    --bg-proyects: #E9ECEF;
+    --fz-primary: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: normal 16px/1.5 "SUSE", sans-serif;
+  background: rgba(248, 248, 248, 0.95);
+  color: var(--text-color);
+  padding: 1rem;
+}
+
+.container{
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 30px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+    background-color: var(--primary-color);
+}
+
+h1, p{
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--text-color-gris);
+    padding-bottom: 3.5rem;
+}
+.row{
+    /* margin-top: 70px; */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 40px;
+}
+
+/* .row:nth-child(odd){
+    grid-template-areas: 
+    'thedate theline thecontent'
+    ;
+}
+
+.row:nth-child(even){
+    grid-template-areas: 
+    'thecontent theline thedate'
+    ;
+} */
+
+.content, .date{
+    margin-bottom: 35px;
+    color:var(--text-color);
+}
+.date{
+    display: flex;
+    justify-content: end;
+    color: var(--text-color-gris);
+    /* grid-area: thedate; */
+}
+
+.content{
+    font-weight: 600;
+    /* grid-area: thecontent; */
+}
+
+.line{
+    position: relative;
+    background-color: var(--text-color);
+    width: 2px;
+    left: 50%;
+    /* grid-area: theline; */
+}
+
+.line span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 300px;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.button:hover{
+    color: var(--secundary-color);
+}
+
+.row:hover .line span{
+    background-color: var(--secundary-color);
+    box-shadow: 0 0 10px 3px var(--secundary-color);
+}
+
+@media screen and (width< 430px){
+    .container{
+        padding: 20px;
+    }
+    .content{
+        padding: 0px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .button{
+        width: auto;
+    }
+}
